@@ -1,11 +1,11 @@
 {
-  "name": "from-zero-to-english",
+  "name": "from-zero-to-hero",
   "version": "1.0.0",
   "description": "",
-  "main": "public/index.html",
+  "main": "partials/index.html",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base/from-zero-to-hero",
     "lint": "eslint .",
     "preview": "vite preview"
   },
