@@ -111,8 +111,6 @@ h4 {
     min-width: 320px;
     max-width: 335px;
     margin: 0 auto;
-
-    padding: 0 16px;
 }
 
 @media only screen and (min-width: 768px) {
