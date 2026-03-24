@@ -13,7 +13,7 @@
     --ls-m: 0.04em;
 
     /* Body */
-    --body-font: 400 16px/1.5 'Manrope', 'Raleway', sans-serif;
+    --body-font: 400 16px/1.5 'Manrope', sans-serif;
 
     /* Small text */
     --small-font: 600 14px/1.5 'Manrope', sans-serif;
@@ -26,7 +26,7 @@
     --large-font: 700 32px/1.38 'Manrope', sans-serif;
 
     /* Button Text */
-    --btn-font: 500 16px/1.5 'Manrope', sans-serif;
+    --btn-font: 700 14px/1.71 'Manrope', sans-serif;
 
     /* Link Text */
     --link-font: 400 12px/1.33 'Manrope', sans-serif;
@@ -45,15 +45,60 @@
     --items-4: 4;
     /* ===== COLORS ===== */
 
-    --black: #121417;   /* Primary text / links / active */
+    --black: 18, 20, 23 ;   /* #121417 */
+    --cl-black-rgb: rgb(var(--black));
+    --cl-black-rgba--50: rgba(var(--cl-black-rgb) / 50%);
     --green: #4dc274;
     --mint: #BEE8CC;
     --light-green: #d4fde1;
     --gray: #f3f5f6;
-    --white: #fff;
+    --white: 255, 255, 255; /* #ffffff */
+    --cl-white: rgb(var(--white));
+    --cl-white-rgba--40: rgba(var(--cl-black-rgb) / 40%);
 
     /* ===== STATES ===== */
 
-    --active-color: #38ae5f;
+    --interactive-color: #38ae5f;
     --background-gradient: linear-gradient(80deg, var(--green) 0%, var(--mint) 100%);
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-logo {
+    display: inline-block;
+    --logo-accent-color: var(--green);
+    color: var(--black);
+
+    & .svg-fill {
+        display: block;
+        width: 182px;
+        height: 27px;
+    }
+}
+
+.button {
+    display: block;
+    padding: 14px 78px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--green);
+    color: var(--white);
+    font: var(--btn-font);
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+
+    &:hover, &:focus {
+        background-color: var(--interactive-color);
+        border: 1px solid var(--cl-white-rgba--40);
+    }
+
+    &:active {
+        background-color: var(--white);
+        color: var(--green);
+    }
 }
