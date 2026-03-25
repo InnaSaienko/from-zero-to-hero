@@ -24,6 +24,9 @@
 }
 
 /* Underline on the word "lessons" */
+span.lessons__title-accent {
+  color: var(--cl-black-rgb);
+}
 
 .lessons__title-accent {
   position: relative;
