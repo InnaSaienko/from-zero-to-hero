@@ -49,7 +49,8 @@
     --rect-width: 39px;
     /* ===== COLORS ===== */
 
-    --black: 18, 20, 23; /* #121417 */
+    --black: 18, 20, 23;
+    /* #121417 */
     --cl-black-rgb: rgb(var(--black));
     --cl-black-rgba--50: rgba(var(--cl-black-rgb) / 50%);
     --cl-black-rgba--80: rgba(var(--cl-black-rgb) / 80%);
@@ -57,7 +58,8 @@
     --mint: #BEE8CC;
     --light-green: #d4fde1;
     --gray: #f3f5f6;
-    --white: 255, 255, 255; /* #ffffff */
+    --white: 255, 255, 255;
+    /* #ffffff */
     --cl-white: rgb(var(--white));
     --cl-white-rgba--40: rgba(var(--cl-black-rgb) / 40%);
 
@@ -73,9 +75,10 @@ body {
     color: var(--cl-black-rgb);
 }
 
-h1, h2 {
+h1,
+h2 {
     font: var(--h1-font);
-    color: var(--white);
+    color: rgb(var(--white));
     text-align: center;
 
     & span {
@@ -114,7 +117,9 @@ h4 {
 }
 
 @media only screen and (min-width: 768px) {
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 60px;
         line-height: 117%;
     }
@@ -139,7 +144,7 @@ h4 {
 }
 
 .container {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 335px;
     margin: 0 auto;
 }
@@ -179,7 +184,8 @@ h4 {
     color: var(--cl-white);
     transition: background-color var(--transition), color var(--transition);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: var(--interactive-color);
         border: 1px solid var(--cl-white-rgba--40);
     }

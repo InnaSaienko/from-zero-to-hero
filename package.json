@@ -9,12 +9,12 @@
   },
   "private": true,
   "devDependencies": {
-    "vite": "^8.0.2"
+    "vite": "^8.0.2",
+    "vite-plugin-html-inject": "^1.1.2"
   },
   "dependencies": {
     "glob": "^13.0.6",
     "postcss-sort-media-queries": "^6.3.3",
-    "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-full-reload": "^1.2.0"
   }
 }
