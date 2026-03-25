@@ -31,7 +31,7 @@
   /* Link Text */
   --link-font: 400 12px/1.33 'Manrope', sans-serif;
 
-  /* Menue Text */
+  /* Menu Text */
   --menu-font: 600 14px/1.29 'Manrope', sans-serif;
 
   /* Headers */
@@ -54,15 +54,15 @@
   /* ===== COLORS ===== */
   --black: 18, 20, 23; /* #121417 */
   --cl-black-rgb: rgb(var(--black));
-  --cl-black-rgba--50: rgba(var(--cl-black-rgb) / 50%);
-  --cl-black-rgba--80: rgba(var(--cl-black-rgb) / 80%);
+  --cl-black-rgba--50: rgba(var(--black), 0.5);
+  --cl-black-rgba--80: rgba(var(--black), 0.8);
   --green: #4dc274;
   --mint: #bee8cc;
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: 255, 255, 255; /* #ffffff */
   --cl-white: rgb(var(--white));
-  --cl-white-rgba--40: rgba(var(--cl-black-rgb) / 40%);
+  --cl-white-rgba--40: rgba(var(--white), 0.4);
 
   /* ===== STATES ===== */
 
@@ -147,14 +147,15 @@ h4 {
 }
 
 .container {
-  min-width: 320px;
-  max-width: 335px;
+  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 704px;
+    padding: 0;
   }
 }
 
