@@ -1,20 +1,21 @@
 {
   "name": "from-zero-to-hero",
   "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/from-zero-to-hero/",
     "preview": "vite preview"
   },
-  "private": true,
   "devDependencies": {
-    "vite": "^8.0.2"
+    "vite": "^8.0.2",
+    "vite-plugin-html-inject": "^1.1.2"
   },
   "dependencies": {
     "glob": "^13.0.6",
     "postcss-sort-media-queries": "^6.3.3",
-    "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-full-reload": "^1.2.0"
   }
 }
