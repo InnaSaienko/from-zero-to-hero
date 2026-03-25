@@ -1,0 +1,124 @@
+.header {
+  padding: 0 20px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1280px) {
+  .header .container {
+    gap: 138px;
+  }
+}
+
+/* #region Logo */
+.logo {
+  font: var(--medium-bold-font);
+  color: var(--black);
+}
+.header-logo {
+  padding: 20px 0;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding: 20.5px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-logo {
+    padding: 28.5px 0;
+  }
+}
+.header-logo .logo-part {
+  color: var(--green);
+}
+/* #endregion */
+
+/* #region Burger */
+.btn-burger {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.burger-icon {
+  display: block;
+  fill: var(--black);
+}
+/* #endregion */
+
+/* #region Navigation */
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.header-menu {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.header-menu-link {
+  display: block;
+  position: relative;
+  padding: 13px 0;
+  font: var(--menu-font);
+  transition: color var(--transition);
+}
+.header-menu-link:hover::after,
+.header-menu-link:focus::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  display: block;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+}
+/* #endregion */
+
+/* #region Mobile-menu */
+.mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+  transition: var(--transition);
+  transition-property: transform, color;
+}
+@media not (hover: hover) {
+  .mobile-menu-btn:active {
+    transform: scale(0.96);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+.mobile-menu-btn-icon {
+  stroke: currentColor;
+}
+.mobile-menu-btn-icon--tablet {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn-icon--mobile {
+    display: none;
+  }
+  .mobile-menu-btn-icon--tablet {
+    display: block;
+  }
+}
+/* #endregion */
