@@ -50,8 +50,8 @@
   --rect-top: 26px;
   --rect-right: 99px;
   --rect-width: 39px;
-  /* ===== COLORS ===== */
 
+  /* ===== COLORS ===== */
   --black: 18, 20, 23; /* #121417 */
   --cl-black-rgb: rgb(var(--black));
   --cl-black-rgba--50: rgba(var(--cl-black-rgb) / 50%);
@@ -83,7 +83,7 @@ body {
 h1,
 h2 {
   font: var(--h1-font);
-  color: var(--white);
+  color: rgb(var(--white));
   text-align: center;
 
   & span {
