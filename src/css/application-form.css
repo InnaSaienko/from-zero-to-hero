@@ -86,20 +86,22 @@
                         cursor: pointer;
                         font: var(--small-font);
 
-                        /*& input:checked + .radio-icon {*/
-                        /*    fill: var(--green);*/
-                        /*}*/
+                        input:checked + .radio-icon {
+                            border: 1px solid var(--green);
+                            color: var(--green);
+                        }
 
                         & .radio-icon {
                             width: 24px;
                             height: 24px;
                             border-radius: 50%;
-                            border: 2px solid var(--green);
+                            border: 2px solid #636366;
+                            color: transparent;
+                            fill: transparent;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             flex-shrink: 0;
-                            fill: var(--green);
                             transition: color var(--transition);
                         }
                     }
