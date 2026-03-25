@@ -31,6 +31,9 @@
   /* Link Text */
   --link-font: 400 12px/1.33 'Manrope', sans-serif;
 
+  /* Menue Text */
+  --menu-font: 600 14px/1.29 'Manrope', sans-serif;
+
   /* Headers */
   --h1-font: 700 38px/1.05 'Manrope', sans-serif;
   --h3-font: 700 32px/1.13 'Manrope', sans-serif;
