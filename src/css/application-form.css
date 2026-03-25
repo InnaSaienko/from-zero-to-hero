@@ -1,26 +1,146 @@
+:root {
+    --cl-black-rgba-10: rgba(var(--cl-black-rgb) / 10%);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .application {
     & .container {
         & .title-head {
+            margin-bottom: 20px;
+
+            & .section-title {
+                margin-bottom: 14px;
+            }
+
             & .rectangle:after {
-                width: 172px;
-                right: 40px;
+                --rect-width: 172px;
+                --rect-right: 9px;
+            }
+        }
+
+        & .application-inner {
+            & .inputs-form {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
+                & .input-item {
+                    font: var(--small-font);
+                    line-height: 1.29;
+
+                    & .input {
+                        width: 100%;
+                        padding: 16px;
+                        border: 1px solid var(--gray);
+                        border-radius: 12px;
+
+                        &:user-invalid {
+                            border-color: orangered;
+                        }
+                        &::placeholder {
+                            font: var(--small-font);
+                            line-height: 1.29;
+                        }
+                    }
+
+                }
+            }
+            & .inputs-radio-accept {
+
+                & p {
+                    font: var(--medium-font);
+                    font-weight: 600;
+                    line-height: 133%;
+                    letter-spacing: var(--ls-s);
+                    margin-bottom: 14px;
+                }
+                & .radio-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-bottom: 40px;
+
+                    & .radio {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        cursor: pointer;
+                        font: var(--small-font);
+
+                        /*& input:checked + .radio-icon {*/
+                        /*    fill: var(--green);*/
+                        /*}*/
+
+                        & .radio-icon {
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            border: 2px solid var(--green);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-shrink: 0;
+                            fill: var(--green);
+                            transition: color var(--transition);
+                        }
+                    }
+                }
+
+            }
+            & .button-form {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            & .message-form {
+                font: var(--link-font);
+                color: var(--cl-black-rgba--50);
+
+                & .message-form_policy {
+                    text-decoration: underline;
+                    text-decoration-skip-ink: none;
+                }
             }
         }
     }
 }
-
-
-
 
 @media only screen and (min-width: 768px) {
-    .container {
-        & .section-header {
-            & .rectangle:after {
-                width: 172px;
+    .application {
+        & .container {
+            & .title-head {
+                & .section-title {
+                    margin-bottom: 16px;
+                }
+
+                & .rectangle:after {
+                    --rect-width: 238px;
+                    --rect-right: 140px;
+                    --rect-top: 31px;
+                }
             }
+
+            & .application-inner {
+                & .inputs-form {
+                    & .input-item {
+
+                    }
+                }
+            }
+
         }
     }
 }
+
 
 @media only screen and (min-width: 1280px) {
 

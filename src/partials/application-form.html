@@ -6,6 +6,63 @@
                 and we'll get back to you shortly.</p>
         </div>
         <div class="application-inner">
+            <form class="inputs-form">
+                <div class="input-item">
+                    <label class="label-title" for="user-name"></label>
+                    <input class="input" type="text" id="user-name" name="user-name" pattern="^[\w]+\s[\w]+"
+                         placeholder="Name"  required>
+                </div>
+                <div class="input-item">
+                    <label class="label-title" for="email"></label>
+                    <input class="input" type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-item">
+                    <label class="label-title" for="phone"></label>
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="Phone">
+                </div>
+                <div class="input-item">
+                    <label class="label-title visually-hidden" for="user-comment"></label>
+                    <textarea class="input textarea" id="user-comment" name="user-comment" rows="5" minlength="10"
+                              maxlength="100"
+                              placeholder="Comment" required></textarea>
+                </div>
+            </form>
+            <div class="inputs-radio-accept">
+                <p>Choose a teacher</p>
+                <div class="radio-group">
+                    <label class="radio">
+                        <input type="radio" name="teacher" value="maria" class="visually-hidden" />
+                        <svg class="radio-icon" width="24" height="24">
+                            <use href="./assets/icons.svg#icon-radio-button"></use>
+                        </svg>
+                        Maria
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="teacher" value="artem" class="visually-hidden" />
+                        <svg class="radio-icon" width="24" height="24">
+                            <use href="../icons.svg#icon-radio-button"></use>
+                        </svg>
+                        Artem
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="teacher" value="ilona" class="visually-hidden" />
+                        <svg class="radio-icon" width="24" height="24">
+                            <use href="../../assets/icons.svg#icon-radio-button"></use>
+                        </svg>
+                        Ilona
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="teacher" value="volodymir" class="visually-hidden" />
+                        <svg class="radio-icon" width="24" height="24">
+                            <use href="../icons.svg#icon-radio-button"></use>
+                        </svg>
+                        Volodymir
+                    </label>
+                </div>
+            </div>
+            <button class="button button-form" type="button">Send</button>
+            <p class="message-form">By clicking on “Send” button, you agree to our <span class="message-form_policy">Privacy Policy</span>, and allow Promodo to use this information for marketing purposes.</p>
         </div>
     </div>
 </section>
