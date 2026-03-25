@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "reset.css";
 @import "base.css";
 @import "socials.css";
@@ -8,3 +9,12 @@
 @import "our-teachers.css";
 @import "application-form.css";
 @import "footer.css";
+=======
+@import 'reset.css';
+@import 'base.css';
+@import 'header.css';
+@import 'socials.css';
+@import 'hero.css';
+@import 'master.css';
+@import 'footer.css';
+>>>>>>> 567a36c (Preparing files for push)
