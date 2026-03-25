@@ -6,8 +6,8 @@
 .socials-dark {
   --icon-cl: var(--black);
   --icon-active-cl: var(--green);
-  --border-cl: rgba(var(--cl-black-rgb) / 10%);
-  --border-active-cl: rgba(var(--cl-green-rgb) / 10%);
+  --border-cl: rgba(var(--black), 0.1);
+  --border-active-cl: rgba(var(--green), 0.1);
 }
 @media only screen and (max-width: 1280px) {
   .socials-dark {
@@ -17,8 +17,8 @@
 .socials-light {
   --icon-cl: var(--gray);
   --icon-active-cl: var(--green);
-  --border-cl: rgba(var(--cl-white) / 10%);
-  --border-active-cl: rgba(var(--cl-green-rgb) / 10%);
+  --border-cl: rgba(var(--white), 0.1);
+  --border-active-cl: rgba(var(--green), 0.1);
 }
 .socials-item {
   width: 44px;
