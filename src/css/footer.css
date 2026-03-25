@@ -1,0 +1,106 @@
+.footer {
+    font: var(--small-font);
+    background-color: rgb(var(--black));
+    color: rgba(var(--white));
+    padding-bottom: 20px;
+    padding-top: 40px;
+   
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer-span {
+    color: var(--green);
+}
+.footer-address {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-address-text {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 4px;
+}
+.footer-container-nav{
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-container-link {
+    display: flex;
+    gap: 12px;
+}
+.footer-container-svg {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+}
+.footer-svg {
+    fill: #fff;
+}
+.footer-privacy-policy{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+.footer-privacy-policy-box {
+    display: flex;
+    gap: 18px;
+}
+.footer-privacy-policy-text {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin-bottom: 14px;
+}
+
+@media only screen and (min-width: 768px){
+    .footer {
+    padding-bottom: 16px;
+    padding-top: 32px;
+}
+.footer-container {
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 110px;
+}
+.footer-container-nav{
+    margin-left: 152px;
+    margin-right: 131px;
+}
+.footer-privacy-policy{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.footer-privacy-policy-text {
+    margin-bottom: 16px;
+}
+}
+@media only screen and (min-width: 1280px){
+    .footer {
+    padding-bottom: 23px;
+    padding-top: 64px;
+}
+.footer-container {
+    display: flex;
+    margin-bottom: 64px;
+}
+.footer-container-nav{
+    margin-left: 315.5px;
+    margin-right: 295.5px;
+}
+.footer-privacy-policy{
+    padding-top: 23px;
+}
+}

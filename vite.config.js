@@ -44,5 +44,8 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    server: {
+      open: true
+    }
   };
 });
