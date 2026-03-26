@@ -1,36 +1,3 @@
-/* ===== SECTION TITLE UNDERLINE ===== */
-
-.section-title-underline {
-    position: relative;
-    color: inherit;
-}
-
-.section-title-underline::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    bottom: 0;
-    width: 100%;
-    height: 12px;
-    background-color: var(--mint);
-    border-radius: 8px;
-    z-index: -1;
-}
-
-@media (min-width: 768px) {
-    .section-title-underline::after {
-        height: 16px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .section-title-underline::after {
-        height: 20px;
-    }
-}
-
-
 /* ===== TITLE HEAD SPACING ===== */
 
 .section-about-us .title-head {
