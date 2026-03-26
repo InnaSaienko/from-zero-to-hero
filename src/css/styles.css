@@ -1,7 +1,8 @@
-@import 'reset.css';
-@import 'base.css';
-@import 'header.css';
-@import 'socials.css';
-@import 'hero.css';
+@import "reset.css";
+@import "base.css";
+@import "our-lessons.css";
+@import "header.css";
+@import "socials.css";
 @import "application-form.css";
-@import 'footer.css';
+@import "hero.css";
+@import "footer.css";
