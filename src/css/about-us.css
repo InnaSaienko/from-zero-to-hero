@@ -153,8 +153,6 @@
 
 .about-us-memoji__img {
     display: block;
-    width: 254px;
-    height: 254px;
     object-fit: contain;
     object-position: center bottom;
 }
