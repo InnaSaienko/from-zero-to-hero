@@ -6,11 +6,6 @@
             & .section-title {
                 margin-bottom: 14px;
             }
-
-            & .rectangle:after {
-                --rect-width: 172px;
-                --rect-right: 9px;
-            }
         }
 
         & .application-inner {
@@ -127,12 +122,6 @@
                 & .section-title {
                     margin-bottom: 16px;
                 }
-
-                & .rectangle:after {
-                    --rect-width: 238px;
-                    --rect-right: 140px;
-                    --rect-top: 31px;
-                }
             }
 
             & .application-inner {
@@ -185,11 +174,6 @@
                 & .section-title-descr {
                     max-width: 709px;
                     margin: 0 auto;
-                }
-
-                & .rectangle:after {
-                    --rect-width: 239px;
-                    --rect-right: 300px;
                 }
             }
 
