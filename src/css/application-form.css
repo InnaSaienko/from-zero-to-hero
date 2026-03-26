@@ -1,4 +1,5 @@
 .application {
+    margin-bottom: 150px;
     & .container {
         & .title-head {
             margin-bottom: 20px;
@@ -15,6 +16,7 @@
 
             & .apply-form {
                 max-width: 500px;
+                margin: 0 auto;
 
                 & .inputs-form {
                     display: flex;
@@ -169,10 +171,11 @@
 
 @media only screen and (min-width: 1280px) {
     .application {
+        margin-bottom: 150px;
         & .container {
             & .title-head {
                 & .section-title-descr {
-                    max-width: 709px;
+                    width: 709px;
                     margin: 0 auto;
                 }
             }
