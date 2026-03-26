@@ -1,6 +1,7 @@
 :root {
     --cl-black-rgba-10: rgba(var(--cl-black-rgb) / 10%);
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,6 +14,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .application {
     & .container {
         & .title-head {
@@ -32,7 +34,10 @@
             & .statistics {
                 display: none;
             }
+
             & .apply-form {
+                max-width: 500px;
+
                 & .inputs-form {
                     display: flex;
                     flex-direction: column;
@@ -60,6 +65,7 @@
                             &:invalid:not(:placeholder-shown) {
                                 border-color: orangered;
                             }
+
                             &::placeholder {
                                 font: var(--small-font);
                                 line-height: 1.29;
@@ -68,6 +74,7 @@
 
                     }
                 }
+
                 & .inputs-radio-accept {
 
                     & .accept-title {
@@ -77,6 +84,7 @@
                         letter-spacing: var(--ls-s);
                         margin-bottom: 14px;
                     }
+
                     & .radio-group {
                         display: flex;
                         flex-direction: column;
@@ -112,10 +120,12 @@
                     }
 
                 }
+
                 & .button-form {
                     width: 100%;
                     margin-bottom: 16px;
                 }
+
                 & .message-form {
                     font: var(--link-font);
                     color: var(--cl-black-rgba--50);
@@ -148,29 +158,35 @@
             & .application-inner {
                 width: 500px;
                 margin: 0 auto;
+
                 & .statistics {
                     display: none;
                 }
+
                 & .apply-form {
                     & .inputs-form {
                         margin-bottom: 32px;
                     }
+
                     & .inputs-radio-accept {
                         & .accept-title {
                             font-size: 20px;
                             line-height: 120%;
                             margin-bottom: 16px;
                         }
+
                         & .radio-group {
                             flex-direction: row;
                             gap: 16px;
                             margin-bottom: 32px;
+
                             & .radio {
                                 font-size: 18px;
                                 line-height: 133%;
                             }
                         }
                     }
+
                     & .message-form {
                         font-size: 14px;
                         line-height: 1.71;
@@ -200,7 +216,7 @@
             & .application-inner {
                 display: flex;
                 justify-content: space-between;
-                gap: var(--indent-x-32);
+                /*gap: var(--indent-x-32);*/
                 width: 100%;
 
 
@@ -210,37 +226,56 @@
                     justify-content: flex-end;
                     background-color: var(--green);
                     border-radius: 30px;
-                    /*width: 492px;*/
-                    /*height: 578px;*/
-                    padding: 0 20px 40px;
+                    overflow: hidden;
 
                     & .statistics-head {
+                        position: relative;
+                        padding: 0 20px 40px;
                         color: rgba(var(--white), 0.7);
                         width: 452px;
                         text-align: center;
+
                         & .statistics-value {
                             font-size: 40px;
                             color: var(--cl-white);
                             margin-bottom: 8px;
                         }
+
                         & .statistics-desc {
+
+                        }
+
+                        & .statistics-add {
+                            position: absolute;
+                            left: -1%;
+                            bottom: 100%;
+                            margin-bottom: 20px;
+                            /*left: 50%;*/
+                            /*transform: translateX(-50%);*/
+                            /*top: -85px;*/
+                            /*left: 0;*/
 
                         }
                     }
 
+
                 }
+
                 & .inputs-form {
 
                 }
+
                 & .inputs-radio-accept {
                     & .accept-title {
                     }
+
                     & .radio-group {
 
                         & .radio {
                         }
                     }
                 }
+
                 & .message-form {
 
                 }
