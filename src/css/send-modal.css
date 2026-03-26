@@ -26,6 +26,25 @@
   margin-bottom: 12px;
 }
 
+.send-modal-hint {
+  display: none;
+  margin: 0 0 12px;
+  font: var(--small-font);
+  color: rgba(var(--black), 0.8);
+}
+
+.send-modal-hint.is-visible {
+  display: block;
+}
+
+.send-modal.send-modal--error {
+  border: 1px solid rgba(220, 38, 38, 0.28);
+}
+
+.send-modal.send-modal--error .send-modal-track {
+  display: none;
+}
+
 .send-modal-track {
   position: relative;
   height: 44px;
