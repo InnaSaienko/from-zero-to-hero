@@ -50,7 +50,7 @@
                         & .input {
                             width: 100%;
                             padding: 16px;
-                            border: 1px solid var(--gray);
+                            border: 1px solid rgba(var(--black), 0.2);
                             border-radius: 12px;
 
                             &:focus {
@@ -99,7 +99,7 @@
                             font: var(--small-font);
 
                             input:checked + .radio-icon {
-                                border: 1px solid var(--green);
+                                border: none;
                                 color: var(--green);
                             }
 
