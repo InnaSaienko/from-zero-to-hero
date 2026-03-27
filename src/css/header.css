@@ -142,6 +142,10 @@ body.menu-open {
   visibility: visible;
   pointer-events: auto;
 }
+.menu-backdrop.no-transition,
+.menu-backdrop.no-transition .mobile-menu {
+  transition: none;
+}
 .mobile-menu {
   position: absolute;
   top: 0;

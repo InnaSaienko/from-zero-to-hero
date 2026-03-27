@@ -1,0 +1,99 @@
+.send-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 1100;
+  background-color: rgba(var(--black), 0.4);
+}
+
+.send-modal-backdrop[hidden] {
+  display: none;
+}
+
+.send-modal {
+  width: min(360px, 100%);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(var(--white));
+  box-shadow: 0 14px 32px rgba(var(--black), 0.2);
+}
+
+.send-modal-text {
+  font: var(--medium-font);
+  margin-bottom: 12px;
+}
+
+.send-modal-hint {
+  display: none;
+  margin: 0 0 12px;
+  font: var(--small-font);
+  color: rgba(var(--black), 0.8);
+}
+
+.send-modal-hint.is-visible {
+  display: block;
+}
+
+.send-modal.send-modal--error {
+  border: 1px solid rgba(220, 38, 38, 0.28);
+}
+
+.send-modal.send-modal--error .send-modal-track {
+  display: none;
+}
+
+.send-modal-track {
+  position: relative;
+  height: 44px;
+  border-radius: 999px;
+  background-color: rgba(var(--green-rgb), 0.1);
+  overflow: hidden;
+}
+
+.send-modal-envelope {
+  position: absolute;
+  top: 50%;
+  left: -44px;
+  display: block;
+  width: 28px;
+  height: 20px;
+  border: 2px solid var(--green);
+  border-radius: 4px;
+  background-color: rgb(var(--white));
+  transform: translateY(-50%);
+}
+
+.send-modal-envelope::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid var(--green);
+  border-left: 2px solid var(--green);
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: rgb(var(--white));
+}
+
+.send-modal-envelope.is-flying {
+  animation: envelope-fly 1000ms ease-in-out forwards;
+}
+
+@keyframes envelope-fly {
+  0% {
+    transform: translate(-6px, -50%) rotate(-8deg);
+    opacity: 0.9;
+  }
+  70% {
+    transform: translate(250px, -62%) rotate(8deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(330px, -80%) rotate(12deg);
+    opacity: 0;
+  }
+}

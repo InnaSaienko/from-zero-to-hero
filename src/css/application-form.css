@@ -22,6 +22,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 18px;
+                    margin-bottom: 20px;
 
                     & .input-item {
                         font: var(--small-font);
@@ -30,6 +31,7 @@
                         & .input {
                             width: 100%;
                             padding: 16px;
+                            padding-left: 18px;
                             border: 1px solid rgba(var(--black), 0.2);
                             border-radius: 12px;
 
@@ -38,18 +40,24 @@
                                 border-color: var(--mint);
                             }
 
-                            &:valid:not(:placeholder-shown) {
+                            &:user-valid:not(:placeholder-shown) {
                                 border-color: var(--green);
                             }
 
-                            &:invalid:not(:placeholder-shown) {
+                            /*&:user-invalid:not(:placeholder-shown) {*/
+                            /*    border-color: orangered;*/
+                            /*}*/
+                            &:invalid:not(:focus):not(:placeholder-shown) {
                                 border-color: orangered;
                             }
-
                             &::placeholder {
                                 font: var(--small-font);
                                 line-height: 1.29;
                             }
+                        }
+                        & .textarea {
+                            display: block;
+                            resize: none;
                         }
                     }
                 }
@@ -121,6 +129,7 @@
     .application {
         & .container {
             & .title-head {
+                margin-bottom: 64px;
                 & .section-title {
                     margin-bottom: 16px;
                 }
@@ -137,6 +146,10 @@
                 & .apply-form {
                     & .inputs-form {
                         margin-bottom: 32px;
+
+                        & .input-item {
+                            line-height: 1.5;
+                        }
                     }
 
                     & .inputs-radio-accept {
@@ -157,7 +170,10 @@
                             }
                         }
                     }
-
+                    & .bottn-form {
+                        font-size: 18px;
+                        line-height: 1.56;
+                    }
                     & .message-form {
                         font-size: 14px;
                         line-height: 1.71;
@@ -171,7 +187,6 @@
 
 @media only screen and (min-width: 1280px) {
     .application {
-        margin-bottom: 150px;
         & .container {
             & .title-head {
                 & .section-title-descr {
@@ -213,7 +228,8 @@
 
                         & .statistics-add {
                             position: absolute;
-                            left: -1%;
+                            left: -15%;
+                            transform: translate(7%, 0%);
                             bottom: 100%;
                             margin-bottom: 20px;
                         }

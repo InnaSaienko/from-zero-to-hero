@@ -57,6 +57,7 @@
     --cl-black-rgba--50: rgba(var(--black), 0.5);
     --cl-black-rgba--80: rgba(var(--black), 0.8);
     --green: #4dc274;
+    --green-rgb: 77, 194, 116; /* #4dc274 */
     --mint: #bee8cc;
     --light-green: #d4fde1;
     --gray: #f3f5f6;
@@ -207,7 +208,7 @@ h4 {
     border-radius: 12px;
     background-color: var(--green);
     font: var(--btn-font);
-    color: var(--white);
+    color: var(--cl-white);
     transition: background-color var(--transition),
     color var(--transition);
 
@@ -220,6 +221,14 @@ h4 {
     &:active {
         background-color: var(--white);
         color: var(--green);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .button {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.56;
     }
 }
 

@@ -7,7 +7,7 @@
   --icon-cl: var(--black);
   --icon-active-cl: var(--green);
   --border-cl: rgba(var(--black), 0.1);
-  --border-active-cl: rgba(var(--green), 0.1);
+  --border-active-cl: rgba(var(--green-rgb), 0.1);
 }
 @media only screen and (max-width: 1280px) {
   .socials-dark {
@@ -16,9 +16,9 @@
 }
 .socials-light {
   --icon-cl: var(--gray);
-  --icon-active-cl: var(--green);
+  --icon-active-cl: rgb(var(--white));
   --border-cl: rgba(var(--white), 0.1);
-  --border-active-cl: rgba(var(--green), 0.1);
+  --border-active-cl: rgba(var(--green-rgb), 0.35);
 }
 .socials-item {
   width: 44px;
@@ -39,7 +39,7 @@
   transition-property: color, border-color;
 }
 .socials-link:hover,
-.socials-link:focus {
+.socials-link:focus-visible {
   color: var(--icon-active-cl);
   border-color: var(--border-active-cl);
 }
