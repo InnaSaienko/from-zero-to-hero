@@ -2,6 +2,17 @@
     --items: 1;
     --indent: 40px;
 
+    margin: 150px auto;
+
+    .section-title-descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66667;
+        text-align: center;
+        color: var(--cl-black-rgba--50);
+        margin-bottom: 64px;
+    }
+
     .teachers-list {
         display: flex;
         align-items: flex-start;
