@@ -50,11 +50,10 @@
                                 font: var(--small-font);
                                 line-height: 1.29;
                             }
-
-                            & + .textarea {
-                                display: block;
-                                resize: none;
-                            }
+                        }
+                        & .textarea {
+                            display: block;
+                            resize: none;
                         }
                     }
                 }
