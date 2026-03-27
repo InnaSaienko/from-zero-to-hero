@@ -85,20 +85,21 @@
                     &::before, &::after {
                         content: "";
                         position: absolute;
-                        top: 0;
-                        left: 0;
+                        /*top: 0;*/
+                        /*left: 0;*/
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) rotate(9deg);
                         border-radius: inherit;
                         width: inherit;
                         height: 428px;
-                        background: rgba(255, 255, 255, 0.5);;
-
-                        transform: rotate(9deg);
+                        background: rgba(255, 255, 255, 0.5);
                         z-index: -1;
                     }
 
                     &::after {
                         background: var(--light-green);
-                        transform: rotate(-11deg);
+                        transform: translate(-50%, -50%) rotate(-11deg);
                     }
 
                     & .button-master {
@@ -128,7 +129,6 @@
                     }
 
                 }
-
 
                 & .benefits-field {
                     padding: 52px 0;
@@ -181,7 +181,66 @@
                             position: absolute;
                             top: 153px;
                             left: 502px;
+                            width: 214px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media screen and (min-width: 1280px) {
+    .benefits {
+        & .container {
+            max-width: 1152px;
+            & .wrapper {
+                padding: 0;
+                & .benefits-head {
+                    padding: 64px 0;
+                    max-width: 776px;
+                }
+
+                & .benefits-field {
+                    padding: 72px 0;
+                    & .benefits-card {
+                        padding: 64px 31px;
+                        margin-bottom: 70px;
+                        width: 1024px;
+
+                        & .card-title {
+                            margin-bottom: 32px;
+                        }
+
+                        & .benefits-context {
+                            max-width: 623px;
+                            margin-bottom: 39px;
+
+                            & .benefits-list {
+                                min-width: 654px;
+                                & .benefits-item {
+                                    gap: 16px;
+
+                                    & .check-icon {
+                                        width: 28px;
+                                        height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                        &::before {
+                            width: 1011px;
+                            height: 402px;
+                        }
+                        &::after {
+                            width: 1050px;
+                            height: 463px;
+                        }
+
+
+                        & .benefits-image {
+                            top: 150px;
+                            left: 760px;
                         }
                     }
                 }
