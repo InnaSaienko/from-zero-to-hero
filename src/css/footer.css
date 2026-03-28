@@ -55,10 +55,12 @@
     align-items: center;
     justify-content: center;
 }
+
 .footer-sosiale-link{
     width: 100%;
     height: 100%;
 }
+
 .footer-svg {
     fill: var(--cl-white);
     width: 100%;

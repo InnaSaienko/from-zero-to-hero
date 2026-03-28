@@ -1,5 +1,4 @@
 .application {
-    margin-bottom: 150px;
     & .container {
         & .title-head {
             margin-bottom: 20px;
