@@ -9,8 +9,8 @@
   /* Extended Font Sizes */
 
   /*Letter spacing*/
-  --ls-s: 0.02em;
-  --ls-m: 0.04em;
+  --ls-s: -0.02em;
+  --ls-m: -0.04em;
 
   /* Body */
   --body-font: 400 16px/1.5 'Manrope', sans-serif;
