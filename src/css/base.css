@@ -82,6 +82,19 @@ html {
 
 section {
   scroll-margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    margin-bottom: 150px;
+  }
 }
 
 body {
