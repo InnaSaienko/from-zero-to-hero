@@ -116,10 +116,21 @@
   border: 1px solid rgba(var(--white), 0.4);
 }
 
-.lessons-card__btn--inverted:hover,
-.lessons-card__btn--inverted:focus {
+.lessons-card__btn--inverted:focus-visible {
   background-color: var(--cl-white);
   color: var(--green);
+}
+
+.lessons-card__btn--inverted:active {
+  background-color: var(--cl-white);
+  color: var(--green);
+}
+
+@media (hover: hover) {
+  .lessons-card__btn--inverted:hover {
+    background-color: var(--cl-white);
+    color: var(--green);
+  }
 }
 
 /* Tablet 768px */
