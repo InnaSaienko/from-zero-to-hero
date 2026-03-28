@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    counter-reset: li;
 }
 
 @media (min-width: 768px) {
@@ -52,6 +53,19 @@
     border-radius: 16px;
     padding: 28px 32px;
     min-height: 160px;
+
+    &:before {
+        content: counter(li, decimal-leading-zero);
+        counter-increment: li;     
+        display: block;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: var(--green);
+        margin-bottom: 16px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -59,17 +73,6 @@
         width: calc(50% - 16px);
         border-radius: 30px;
     }
-}
-
-.about-us-card__num {
-    display: block;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: var(--green);
-    margin-bottom: 16px;
 }
 
 .about-us-card__text {

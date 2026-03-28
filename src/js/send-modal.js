@@ -45,7 +45,6 @@ if (
     sendHint.classList.remove('is-visible');
     sendHint.textContent = '';
     sendStatus.textContent = 'Sending...';
-    document.body.classList.remove('menu-open');
   };
 
   const showSendModal = ({
@@ -58,7 +57,6 @@ if (
     clearCloseTimer();
     clearStatusTimer();
     sendModal.hidden = false;
-    document.body.classList.add('menu-open');
     sendStatus.textContent = statusText;
     sendModalCard.classList.toggle('send-modal--error', isError);
 
@@ -78,7 +76,9 @@ if (
     }, autoCloseDelay);
   };
 
-  sendButton.addEventListener('click', () => {
+  sendButton.addEventListener('click', event => {
+    event.preventDefault();
+
     const hasFieldErrors = requiredFields.some(
       field => !field || field.value.trim() === '' || !field.checkValidity()
     );
