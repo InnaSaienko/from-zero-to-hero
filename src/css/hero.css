@@ -43,6 +43,10 @@
   );
 }
 
+.hero-content {
+  max-width: 295px;
+}
+
 .hero-title {
   text-align: left;
   margin-bottom: 40px;
@@ -51,9 +55,7 @@
 }
 
 .hero-button {
-  width: 295px;
-  min-height: 52px;
-  padding: 14px 78px;
+  width: 100%;
   margin-bottom: 62px;
 }
 

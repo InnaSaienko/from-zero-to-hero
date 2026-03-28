@@ -30,7 +30,7 @@
 /* Card */
 
 .lessons-card {
-  width: 100%;
+  width: 335px;
   height: 400px;
   padding: 40px 20px;
   display: flex;
@@ -100,14 +100,7 @@
 /* Card button */
 
 .lessons-card__btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 52px;
-  padding: 14px;
   margin-top: auto;
-  color: var(--cl-white);
 }
 
 .lessons-card__btn--inverted {
