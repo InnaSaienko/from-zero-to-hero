@@ -1,6 +1,7 @@
 .benefits {
   & .container {
     & .wrapper {
+      overflow: hidden;
       background: var(--background-gradient);
       border-radius: 16px;
       padding: 40px 0;
@@ -21,7 +22,7 @@
         }
       }
       & .benefits-field {
-        overflow: hidden;
+        /* overflow: hidden; */
         position: relative;
         left: 50%;
         transform: translateX(-50%);
