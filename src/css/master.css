@@ -8,7 +8,7 @@
       & .benefits-head {
         box-sizing: content-box;
         margin: 0 auto;
-        padding: 0px 20px 40px 20px;
+        padding: 0 20px 40px 20px;
         max-width: 295px;
 
         & .benefits-title {
@@ -119,7 +119,7 @@
         padding-top: 64px;
         padding-bottom: 30px;
         & .benefits-head {
-          padding: 0px 32px 32px;
+          padding: 0 32px 32px;
           max-width: 640px;
           & .benefits-title {
             font-size: 60px;
@@ -194,11 +194,11 @@
     & .container {
       max-width: 1152px;
       & .wrapper {
-        padding-bottom: 0px;
+        padding-bottom: 0;
         & .benefits-head {
           box-sizing: content-box;
           margin: 0;
-          padding-top: 0px;
+          padding-top: 0;
           padding-left: 64px;
           padding-bottom: 72px;
           max-width: 776px;
