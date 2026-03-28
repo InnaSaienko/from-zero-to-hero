@@ -21,7 +21,6 @@ if (
     applyForm.querySelector('#user-name'),
     applyForm.querySelector('#email'),
     applyForm.querySelector('#phone'),
-    applyForm.querySelector('#user-comment'),
   ];
 
   const clearCloseTimer = () => {
