@@ -49,15 +49,28 @@ To run the project locally:
 
 ```bash
 git clone https://github.com/innasaienko/from-zero-to-hero.git
+``` 
 
 2. Navigate to the project folder:
 
 ```bash
 cd from-zero-to-hero
+```
 
-3. Open index.html in your browser
+3. Install dependencies:
 
-📁 Project Structure
+```bash
+npm install
+```
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
 
 from-zero-to-hero/
 │
@@ -67,7 +80,10 @@ from-zero-to-hero/
 ├── assets/
 └── README.md
 
-📈 Future Improvements
+---
+
+## 📈 Future Improvements
+
 Add more lessons
 Create interactive exercises
 Implement quizzes and knowledge checks
