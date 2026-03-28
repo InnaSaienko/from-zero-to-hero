@@ -1,0 +1,121 @@
+/* ===== SECTION STYLES ===== */
+.section-reviews {
+    .title-head {
+        margin-bottom: 40px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .title-head {
+            margin-bottom: 64px;
+        }
+    }
+}
+
+/* ===== REVIEWS LIST ===== */
+
+.reviews-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+/* ===== REVIEW CARD ===== */
+
+.reviews-card {
+    background-color: var(--gray);
+    border-radius: 30px;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .reviews-card {
+        width: calc(50% - 16px);
+        padding: 32px 16px 40px;
+
+        &:nth-child(2) {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .reviews-card {
+        width: calc((100% - 64px) / 3);
+
+        &:last-child {
+            display: flex;
+        }
+    }
+}
+
+/* ===== AUTHOR INFO BOX ===== */
+
+.reviews-card__author {
+    background-color: var(--green);
+    border-radius: 16px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        padding: 14px 16px;
+    }
+}
+
+.reviews-card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    background-color: var(--cl-white);
+}
+
+.reviews-card__name {
+    font: var(--h4-font);
+    letter-spacing: var(--ls-s);
+    color: var(--cl-white);
+    margin-bottom: 2px;
+}
+
+.reviews-card__role {
+    font: var(--link-font);
+    color: var(--cl-white);
+    opacity: 0.5;
+}
+
+/* ===== REVIEW TEXT ===== */
+
+.reviews-card__text {
+    font-size: 14px;
+    line-height: 170%;
+    color: var(--cl-black-rgba--50);
+    padding: 0 14px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 0 16px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
