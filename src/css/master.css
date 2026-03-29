@@ -130,11 +130,11 @@
                         transform: translate(-50%, -50%) rotate(8deg);
                     }
 
-                    &::before {
+                    &.animation-cards::before {
                         animation: cardBeforeEnter 0.8s ease-out forwards;
                     }
 
-                    &::after {
+                    &.animation-cards::after {
                         animation: cardAfterEnter 0.8s ease-out forwards;
                     }
 
