@@ -1,5 +1,4 @@
 .header {
-  padding: 0 20px;
   margin-bottom: 8px;
 }
 
@@ -14,7 +13,6 @@
     margin-bottom: 16px;
   }
 }
-
 
 .header .container {
   display: flex;
@@ -87,16 +85,20 @@
   font: var(--menu-font);
   transition: color var(--transition);
 }
-.header-menu-link:hover::after,
-.header-menu-link:focus::after {
+.header-menu-link::after {
   content: '';
   position: absolute;
   bottom: 5px;
   left: 0;
   display: block;
-  width: 37px;
+  width: 0;
   height: 2px;
   background-color: var(--green);
+  transition: width var(--transition);
+}
+.header-menu-link:hover::after,
+.header-menu-link:focus::after {
+  width: 37px;
 }
 /* #endregion */
 
