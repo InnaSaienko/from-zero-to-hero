@@ -1,3 +1,40 @@
+@keyframes cardBeforeEnter {
+  0% {
+    transform: translate(-50%, -120%) scale(0.5) rotate(-8deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(-8deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cardAfterEnter {
+  0% {
+    transform: translate(-50%, -120%) scale(0.5) rotate(11deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(11deg);
+    opacity: 1;
+  }
+}
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .benefits-card::before {*/
+/*    animation: cardBeforeEnter 0.8s ease-out forwards;*/
+/*    animation-timeline: view();*/
+/*    animation-range: entry 0% entry 100%;*/
+/*  }*/
+
+/*  .benefits-card::after {*/
+/*    animation: cardAfterEnter 0.8s ease-out forwards;*/
+/*    animation-timeline: view();*/
+/*    animation-range: entry 0% entry 100%;*/
+/*  }*/
+/*}*/
+
 .benefits {
   & .container {
     & .wrapper {
@@ -22,7 +59,6 @@
         }
       }
       & .benefits-field {
-        /* overflow: hidden; */
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -31,7 +67,7 @@
         & .benefits-card {
           position: relative;
           border-radius: 16px;
-          width: 294px;
+          width: 295px;
           background: var(--cl-white);
           padding: 40px 19px;
           padding-right: 21px;
@@ -86,17 +122,28 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) rotate(9deg);
+            transform: translate(-50%, -50%) rotate(-8deg);
             border-radius: inherit;
             width: inherit;
-            height: 428px;
-            background: rgba(255, 255, 255, 0.5);
+            height: 408px;
+            background: var(--light-green);
             z-index: -1;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
           }
 
           &::after {
-            background: var(--light-green);
-            transform: translate(-50%, -50%) rotate(-11deg);
+            background:  rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%) rotate(11deg);
+          }
+
+          &::before {
+            animation-name: cardBeforeEnter;
+          }
+
+          &::after {
+            animation-name: cardAfterEnter;
           }
 
           & .button-master {
@@ -110,6 +157,7 @@
     }
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .benefits {
