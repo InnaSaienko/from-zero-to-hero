@@ -13,23 +13,31 @@
 Під час роботи над цим проєктом ми уявляли HTML, CSS і JavaScript як окремих
 персонажів, яких потрібно не просто вивчити, а справді "приручити".
 
-![HTML BOSS](./assets/html-boss.png)
+<p align="center">
+	<img src="./assets/html-boss.png" alt="HTML BOSS" />
+</p>
 
 Спочатку ми знайомилися з HTML — базовою силою, що відповідає за структуру та
 каркас сторінки.
 
-![CSS BOSS](./assets/css-boss.png)
+<p align="center">
+	<img src="./assets/css-boss.png" alt="CSS BOSS" />
+</p>
 
 Далі опановували CSS, який додає стилі, настрій і візуальну виразність.
 
-![JS BOSS](./assets/js-boss.png)
+<p align="center">
+	<img src="./assets/js-boss.png" alt="JS BOSS" />
+</p>
 
 Завершальним викликом став JavaScript — інструмент, що надає сайту рух, логіку
 та інтерактивність. Кожен із цих етапів був частиною нашого навчального шляху.
 
 ## Учасники команди
 
-![Our Team](./assets/our-team.png)
+<p align="center">
+	<img src="./assets/our-team.png" alt="Our Team" />
+</p>
 
 - [Інна Саєнко](https://github.com/InnaSaienko) — Team Leader
 - [Інна Матвієнко](https://github.com/Merel1n) — Scrum Master
@@ -56,6 +64,7 @@
 
 ```text
 from-zero-to-hero/
+├── assets/
 ├── .github/
 │   └── workflows/
 ├── src/
