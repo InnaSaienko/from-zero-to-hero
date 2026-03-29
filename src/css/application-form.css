@@ -23,6 +23,7 @@
                     gap: 18px;
 
                     & .input-item {
+                        position: relative;
                         font: var(--small-font);
                         line-height: 1.29;
 
@@ -45,11 +46,28 @@
                             &:invalid:not(:focus):not(:placeholder-shown) {
                                 border-color: orangered;
                             }
+
+                            &:invalid:not(:focus):not(:placeholder-shown) + .invalid-icon {
+                                display: block;
+                            }
+
                             &::placeholder {
                                 font: var(--small-font);
                                 line-height: 1.29;
                             }
                         }
+
+                        & .invalid-icon {
+                            display: none;
+                            position: absolute;
+                            top: 50%;
+                            left: 90%;
+                            transform: translateY(-50%);
+                            width: 20px;
+                            height: 20px;
+                            color: orangered;
+                        }
+
                         & .textarea {
                             display: block;
                             resize: none;
@@ -123,6 +141,7 @@
         & .container {
             & .title-head {
                 margin-bottom: 64px;
+
                 & .section-title {
                     margin-bottom: 16px;
                 }
@@ -144,6 +163,7 @@
                             line-height: 1.5;
                         }
                     }
+
                     & .inputs-radio-accept {
                         & .accept-title {
                             font-size: 20px;
@@ -161,10 +181,12 @@
                             }
                         }
                     }
+
                     & .button-form {
                         font-size: 18px;
                         line-height: 1.56;
                     }
+
                     & .message-form {
                         font-size: 14px;
                         line-height: 1.71;
