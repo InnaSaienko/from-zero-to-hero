@@ -25,7 +25,7 @@
 /* Card */
 
 .lessons-card {
-  width: 335px;
+  max-width: 335px;
   height: 400px;
   padding: 40px 20px;
   display: flex;
