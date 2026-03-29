@@ -1,90 +1,100 @@
-# From Zero to Hero 🚀
+# From Zero to Hero
 
-Welcome to the **From Zero to Hero** project — an educational website designed to help beginners learn web development step by step from scratch.
+## Про проєкт
 
-🔗 Live Demo: https://innasaienko.github.io/from-zero-to-hero/
+[Github Live Page](https://innasaienko.github.io/from-zero-to-hero/)
 
----
+Ласкаво просимо до проєкту команди From Zero to Hero, створеного в межах
+навчання на магістерській програмі. Цей проєкт демонструє наше опанування
+базових навичок веброзробки.
 
-## 📌 About the Project
+### Наш шлях у проєкті
 
-This website is a learning platform that guides users through the basics of web development:
+Під час роботи над цим проєктом ми уявляли HTML, CSS і JavaScript як окремих
+персонажів, яких потрібно не просто вивчити, а справді "приручити".
 
-- HTML
-- CSS
-- JavaScript
-- Practical exercises
-- Code examples
+![HTML BOSS](./src/images/readme-images/html-boss.png)
 
-The project is aimed at beginners who want to grow from zero knowledge to confident skills.
+Спочатку ми знайомилися з HTML — базовою силою, що відповідає за структуру та
+каркас сторінки.
 
----
+![CSS BOSS](./src/images/readme-images/css-boss.png)
 
-## 🧩 Features
+Далі опановували CSS, який додає стилі, настрій і візуальну виразність.
 
-- 📚 Structured lessons
-- 💡 Clear explanations with examples
-- 🧪 Hands-on exercises
-- 📱 Responsive design
-- 🎯 Step-by-step learning path
+![JS BOSS](./src/images/readme-images/js-boss.png)
 
----
+Завершальним викликом став JavaScript — інструмент, що надає сайту рух, логіку
+та інтерактивність. Кожен із цих етапів був частиною нашого навчального шляху.
 
-## 🛠️ Technologies Used
+## Учасники команди
 
-This project is built with:
+![Our Team](./src/images/readme-images/our-team.png)
+
+- [Інна Саєнко](https://github.com/InnaSaienko) — Team Leader
+- [Інна Матвієнко](https://github.com/Merel1n) — Scrum Master
+- [Гуленко Данило](https://github.com/Daniel254) — Developer
+- [Ілля Сергунін](https://github.com/User-Student1) — Developer
+- [Сергій Жданюк](https://github.com/serhiizx) — Developer
+- [Анастасія Кузьміна](https://github.com/hontonoran) — Developer
+- [Szabolcs Gönczy](https://github.com/g-szabolcs-b) — Developer
+- [Віталій Черпак](https://github.com/OneThousandEyes) — Developer
+
+## Стек технологій
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
-- GitHub Pages (for deployment)
+- JavaScript (vanilla)
+- GitHub Pages (deployment)
+- Vite
+- Node.js + npm (package.json, package-lock.json)
+- GitHub Actions (CI workflow)
 
----
+## Структура проєкту
 
-## 🚀 Getting Started
+<!-- prettier-ignore-start -->
 
-To run the project locally:
+```text
+from-zero-to-hero/
+├── .github/
+│   └── workflows/
+├── src/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   ├── partials/
+│   └── index.html
+├── .gitignore
+├── .prettierrc.json
+├── README.md
+├── package-lock.json
+├── package.json
+└── vite.config.js
+```
+<!-- prettier-ignore-end -->
 
-1. Clone the repository:
+## Як запустити проєкт локально
+
+1. Склонуйте репозиторій:
 
 ```bash
 git clone https://github.com/innasaienko/from-zero-to-hero.git
-``` 
+```
 
-2. Navigate to the project folder:
+2. Перейдіть у папку проєкту:
 
 ```bash
 cd from-zero-to-hero
 ```
 
-3. Install dependencies:
+3. Встановіть залежності:
 
 ```bash
 npm install
 ```
-4. Run the development server:
+
+4. Запустіть локальний сервер розробки:
 
 ```bash
 npm run dev
 ```
-
----
-
-## 📁 Project Structure
-
-from-zero-to-hero/
-│
-├── index.html
-├── css/
-├── js/
-├── assets/
-└── README.md
-
----
-
-## 📈 Future Improvements
-
-Add more lessons
-Create interactive exercises
-Implement quizzes and knowledge checks
-Improve UX/UI
