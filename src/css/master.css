@@ -80,23 +80,22 @@
             }
           }
 
-          &::before,
-          &::after {
+          &::before, &::after {
             content: '';
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) rotate(9deg);
+            transform: translate(-50%, -50%) rotate(-8deg);
             border-radius: inherit;
             width: inherit;
             height: 428px;
-            background: rgba(255, 255, 255, 0.5);
+            background: var(--light-green);
             z-index: -1;
           }
 
           &::after {
-            background: var(--light-green);
-            transform: translate(-50%, -50%) rotate(-11deg);
+            background:  rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%) rotate(11deg);
           }
 
           & .button-master {
@@ -164,7 +163,7 @@
 
             &::before,
             &::after {
-              height: 499px;
+              height: 500px;
             }
 
             & .button-master {
@@ -226,12 +225,12 @@
               }
             }
             &::before {
-              width: 1011px;
-              height: 402px;
-            }
-            &::after {
               width: 1050px;
               height: 463px;
+            }
+            &::after {
+              width: 1011px;
+              height: 402px;
             }
 
             & .benefits-image {
