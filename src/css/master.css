@@ -267,19 +267,21 @@
                             max-width: 623px;
                             margin-bottom: 39px;
 
-                            & .benefits-list {
-                                min-width: 654px;
-
-                                & .benefits-item {
-                                    gap: 16px;
-                                }
-                            }
-                        }
-
-                        &::before {
-                            width: 1050px;
-                            height: 463px;
-                        }
+              & .benefits-list {
+                min-width: 654px;
+                & .benefits-item {
+                  gap: 16px;
+                }
+              }
+            }
+            &::before {
+              width: 1050px;
+              height: 463px;
+            }
+            &::after {
+              width: 1011px;
+              height: 402px;
+            }
 
                         &::after {
                             width: 1011px;
