@@ -12,12 +12,12 @@
 
 @keyframes cardAfterEnter {
   0% {
-    transform: translate(-50%, -120%) scale(0.5) rotate(11deg);
+    transform: translate(-50%, -120%) scale(0.5) rotate(8deg);
     opacity: 0;
   }
 
   100% {
-    transform: translate(-50%, -50%) scale(1) rotate(11deg);
+    transform: translate(-50%, -50%) scale(1) rotate(8deg);
     opacity: 1;
   }
 }
@@ -135,7 +135,7 @@
 
           &::after {
             background:  rgba(255, 255, 255, 0.5);
-            transform: translate(-50%, -50%) rotate(11deg);
+            transform: translate(-50%, -50%) rotate(8deg);
           }
 
           &::before {
@@ -212,7 +212,8 @@
 
             &::before,
             &::after {
-              height: 499px;
+              width: inherit;
+              height: 500px;
             }
 
             & .button-master {
@@ -274,12 +275,12 @@
               }
             }
             &::before {
-              width: 1011px;
-              height: 402px;
-            }
-            &::after {
               width: 1050px;
               height: 463px;
+            }
+            &::after {
+              width: 1011px;
+              height: 402px;
             }
 
             & .benefits-image {
