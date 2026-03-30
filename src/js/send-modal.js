@@ -21,6 +21,7 @@ if (
     applyForm.querySelector('#user-name'),
     applyForm.querySelector('#email'),
     applyForm.querySelector('#phone'),
+    () => applyForm.querySelectorAll('input[name="teacher"]:checked').length > 0,
   ];
 
   const clearCloseTimer = () => {
@@ -79,7 +80,12 @@ if (
     event.preventDefault();
 
     const hasFieldErrors = requiredFields.some(
-      field => !field || field.value.trim() === '' || !field.checkValidity()
+        field => {
+          if (typeof field === "function") {
+            return !field();
+          }
+          return !field || field.value.trim().length === 0 || !field.checkValidity()
+        }
     );
 
     if (hasFieldErrors) {
