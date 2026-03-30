@@ -25,6 +25,7 @@
   object-fit: cover;
   object-position: 75% center;
   z-index: -2;
+  transform: scale(1.3);
 }
 
 .hero-overlay {
